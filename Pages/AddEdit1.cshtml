@@ -1,0 +1,76 @@
+﻿@page
+@model Omega6.Pages.AddEdit1Model
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+</style>
+
+<h1>Add-Edit</h1>
+
+@* <p>@Model.Message</p> *@
+
+<form method="post">
+    @* <input type="text" name="Name" /> *@
+
+    @* <button type="submit">POST</button> *@
+    <label> ID No:</label>
+    <input type="number" /><br>
+    <label> Name:</label>
+    <input type="text" /><br>
+    <label> LastNm:</label>
+    <input type="text" /><br>
+    <label> Age:</label>
+    <input type="number" /><br>
+    <br>
+
+    <label> C/o:</label>
+    <input type="text" /><br>
+    <label> Strt No:</label>
+    <input type="number" /><br>
+    <label> Strt Name:</label>
+    <input type="text" /><br>
+    <label> Addr 1:</label>
+    <input type="text" /><br>
+    <label> Addr 2:</label>
+    <input type="text" /><br>
+    <label> City-Pin:</label>
+    <input type="number" /><br>
+    <label> Coun:</label>
+    <input type="text" /><br>
+    <br>
+
+    <label> Ph Off:</label>
+    <input type="text" /><br>
+    <label> Ph Res:</label>
+    <input type="text" /><br>
+    <br>
+
+    <label> Birth:</label>
+    <input type="number" /><br>
+    <label> Anniv:</label>
+    <input type="number" /><br>
+    <br>
+
+    <button type="submit" name="direction" value="save">
+        Save
+    </button>
+
+    <button type="submit" name="direction" value="cancel">
+        Cancel
+    </button>
+    <br>
+
+</form>
+<br>
+<br>
+
+@{
+}

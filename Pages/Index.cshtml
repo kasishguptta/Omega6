@@ -1,0 +1,111 @@
+﻿@page
+@model IndexModel
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+</style>
+
+<h1>Omega</h1>
+
+@* <p>@Model.Message</p> *@
+
+<form method="post">
+    @* <input type="text" name="Name" /> *@
+
+    @* <button type="submit">POST</button> *@
+    <label> ID No:</label>
+    <input type="number" /><br>
+    <label> Name:</label>
+    <input type="text" /><br>
+    <label> LastNm:</label>
+    <input type="text" /><br>
+    <label> Age:</label>
+    <input type="number" /><br>
+    <br>
+
+    <label> C/o:</label>
+    <input type="text" /><br>
+    <label> Strt No:</label>
+    <input type="text" /><br>
+    <label> Strt Name:</label>
+    <input type="text" /><br>
+    <label> Addr 1:</label>
+    <input type="text" /><br>
+    <label> Addr 2:</label>
+    <input type="text" /><br>
+    <label> City-Pin:</label>
+    <input type="text" /><br>
+    <label> Coun:</label>
+    <input type="text" /><br>
+    <br>
+
+    <label> Ph Off:</label>
+    <input type="text" /><br>
+    <label> Ph Res:</label>
+    <input type="number" /><br>
+    <br>
+
+    <label> Birth:</label>
+    <input type="date" /><br>
+    <label> Anniv:</label>
+    <input type="date" /><br>
+    <br>
+
+    <button type="submit" name="direction" value="add" formaction="/AddEdit" formmethod="get">
+        Add
+    </button>
+
+    <button type="submit" name="direction" value="edit" formaction="/AddEdit" formmethod="get">
+        Edit
+    </button>
+
+    <button type="submit" name="direction" value="delete" formaction="/AddEdit" formmethod="get">
+        Delete
+    </button><br>
+
+    <button type="submit" name="direction" value="first" formaction="/AddEdit" formmethod="get">
+        First
+    </button>
+
+    <button type="submit" name="direction" value="prev" formaction="/AddEdit" formmethod="get">
+        Prev
+    </button>
+
+    <button type="submit" name="direction" value="next" formaction="/AddEdit" formmethod="get">
+        Next
+    </button>
+
+    <button type="submit" name="direction" value="last" formaction="/AddEdit" formmethod="get">
+        Last
+    </button>
+    <br>
+
+</form>
+<br>
+<br>
+
+
+@{
+//     using Microsoft.AspNetCore.Mvc;
+//     using Microsoft.AspNetCore.Mvc.RazorPages;
+
+// namespace Omega6.Pages
+// {
+//     public class IndexModel : PageModel
+//     {
+
+//         public void OnGet()
+//         {
+//         }
+//     }
+// }
+
+}

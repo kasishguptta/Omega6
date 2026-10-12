@@ -1,0 +1,89 @@
+﻿@page
+@model Omega6.Pages.Form1Model
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+</style>
+
+<h1>Form</h1>
+
+@* <p>@Model.Message</p> *@
+
+<form method="post">
+    @* <input type="text" name="Name" /> *@
+
+    @* <button type="submit">POST</button> *@
+
+        <label> ID No:</label>
+        <input type="text" /><br>
+        <label> Name:</label>        
+        <input type="text" />        
+        <button type="submit" name="direction" value="add">
+            Add
+        </button><br>
+        <label> LastNm:</label>
+    <input type="text" /><br>
+        <br>
+
+        <label> C/o:</label>
+    <input type="text" /><br>
+        <label> Strt No:</label>
+    <input type="text" /><br>
+        <label> Strt Name:</label>
+        <input type="text" />
+        <button type="submit" name="direction" value="edit">
+            Edit
+        </button><br>
+        <label> Addr 1:</label>
+    <input type="text" /><br>
+        <label> Addr 2:</label>
+    <input type="text" /><br>
+        <label> City-Pin:</label>
+    <input type="text" /><br>
+        <label> Coun:</label>
+        <input type="text" />
+        <br>
+        
+        <label> Ph Off:</label>
+    <input type="text" /><br>
+        <label> Ph Res:</label>
+        <input type="text" />
+        <button type="submit" name="direction" value="delete">
+            Delete
+        </button><br>
+        <br>
+
+    <label> Birth:</label>
+    <input type="text" /><br>
+    <label> Anniv:</label>
+    <input type="text" /><br>
+    <br>
+        <button type="submit" name="direction" value="prev">
+            First
+        </button>
+
+        <button type="submit" name="direction" value="prev">
+            Prev
+        </button>
+
+        <button type="submit" name="direction" value="next">
+            Next
+        </button>
+
+        <button type="submit" name="direction" value="next">
+            Last
+        </button>
+        <br>
+
+</form><br><br>
+
+@{
+}

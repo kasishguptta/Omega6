@@ -1,0 +1,93 @@
+﻿@page
+@model Omega6.Pages.AddEditModel
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+</style>
+
+<h1>Add / Edit Record</h1>
+
+<p>@Model.Message</p>
+
+<form method="post">
+    @* <input type="text" name="Name" /> *@
+
+    @* <button type="submit">POST</button> *@
+
+    <label>ID No:</label>
+    <input type="number" asp-for="Id" required />
+    <br><br>
+
+    <label>Name:</label>
+    <input type="text" asp-for="Name" required />
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" asp-for="LastNm" required />
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" asp-for="Age" required />
+    <br><br>
+        
+    <label> C/o:</label>
+    <input type="text" asp-for="Co" required /><br><br>
+
+    <label> Strt No:</label>
+    <input type="text" asp-for="StNo" required /><br><br>
+
+    <label> Strt Name:</label>
+    <input type="text" asp-for="Street" required /><br><br>
+
+    <label> Addr 1:</label>
+    <input type="text" asp-for="Addr1" required /><br><br>
+
+    <label> Addr 2:</label>
+    <input type="text" asp-for="Addr2" required /><br><br>
+
+    <label> City-Pin:</label>
+    <input type="text" asp-for="CityPin" required /><br><br>
+
+    <label> Coun:</label>
+    <input type="text" asp-for="Coun" required /><br><br>
+
+    <br>
+
+    <label> Ph Off:</label>
+    <input type="text" asp-for="PhOff" required /><br><br>
+
+    <label> Ph Res:</label>
+    <input type="number" asp-for="PhRes" required /><br><br>
+
+    <br>
+
+    <label> Birth:</label>
+    <input type="date" asp-for="Birth" required /><br><br>
+
+    <label> Anniv:</label>
+    <input type="date" asp-for="Anniv" required /><br><br>
+
+    <br> 
+
+    <button type="submit" name="direction" value="save">
+        Save
+    </button>
+
+    <button type="submit" name="direction" value="cancel">
+        Cancel
+    </button>
+    <br>
+
+</form>
+<br>
+<br>
+
+@{
+}
