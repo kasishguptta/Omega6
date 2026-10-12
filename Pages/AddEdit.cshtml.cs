@@ -62,6 +62,8 @@ namespace Omega6.Pages
                 "Trusted_Connection=True;" +
                 "TrustServerCertificate=True;";
 
+
+
             string query =
                 "INSERT INTO Address (Id, Name, LastNm, Age, Co, StNo, " +
                 "Street, Addr1, Addr2, CityPin, Coun, PhOff, PhRes, Birth," +
